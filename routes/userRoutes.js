@@ -3,9 +3,9 @@ const {loginControllers,registerController}=require('../controllers/userControl'
 
 const router=express.Router()
 
-//Router POST LOGIn
+// Router POST LOGIn
 router.post('/login',loginControllers)
-//Register User
+// Register User
 router.post('/register',registerController)
 
 module.exports=router;

@@ -25,9 +25,12 @@ const loginControllers = async (req, res) => {
 };
 
 const registerController = async (req, res) => {
+
+  
   try {
     
     const { name, email, password } = req.body;
+    console.log(name);
     const hashedPassword = await bcrypt.hash(password, saltRounds);
    console.log(hashedPassword);
    
